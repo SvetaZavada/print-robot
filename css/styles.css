@@ -1,0 +1,564 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url(../fonts/segoeui.ttf);
+}
+
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url(../fonts/segoeuib.ttf);
+}
+
+@font-face {
+    font-family: "Bebas Neue Bold";
+    src: url(../fonts/BebasNeueBold.ttf);
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    color: #343434;
+}
+
+h1 {
+    font-family: "Segoe UI Bold", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    color: #343434;
+    padding: 30px;
+}
+
+h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #343434;
+}
+
+a {
+    color: #343434;
+}
+
+a:focus, a:active, a:hover {
+    text-decoration: none;
+}
+/*
+div {
+    overflow: hidden;
+}
+*/
+/*
+div::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+}
+*/
+
+.clear-both{
+    clear: both;
+}
+
+.dark-header {
+    background: #343434;
+    height: 48px;
+}
+
+.row-large {
+  max-width: 1185px;
+  margin: auto;
+}
+
+.dark-header li {
+    display: inline;
+}
+
+.dark-header a {
+    color: #808080;
+    text-transform: uppercase;
+}
+
+.dark-header a:hover {
+    color: #bebfbd;
+}
+
+
+.search input {
+    width: 100%;
+    max-width: 222px;
+}
+
+form.search button {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    color: #fff;
+    background-color: #f45400;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px #de4c00;
+}
+
+button img {
+    width: 14px;
+    margin: -2px auto 2px;
+}
+
+.login {
+    text-align: right;
+}
+
+.login img {
+    height: 13px;
+    margin: -3px 3px 2px;
+}
+
+.login li:last-child {
+    border-left: 1px solid #808080;
+}
+
+.light-header .row {
+    border-bottom: 2px solid #f45400;
+    margin: 28px auto 40px;
+    height: 63px;
+}
+
+.phone div, .cart div {
+    text-align: right;
+}
+
+.light-header .glyphicon {
+    margin-right: 10px;
+}
+
+.light-header .bold {
+    font-family: "Segoe UI Bold";
+}
+
+.light-header .up {
+    text-transform: uppercase;
+}
+
+.phone div:first-child {
+    font-size: 24px;
+}
+
+.phone span {
+    color: #92ba22;
+}
+
+.catalog {
+    border: 1px solid #f45400;
+    border-bottom: none;
+    border-radius: 2px 2px 0 0;
+    padding: 10px 0 30px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.catalog span {
+    color: #de4c00;
+}
+
+.cart .glyphicon {
+    color: #de4c00;
+}
+
+.nav {
+    background: #92ba22;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.4);
+}
+
+.nav span {
+    font-size: 25px;
+    padding: 6px;
+}
+
+.nav.left {
+    float: left;
+    position: relative;
+    top: 40%;
+}
+
+.nav.right {
+    float: right;
+    position: relative;
+    top: 40%;
+}
+
+.slider {
+    background: url(../img/slider1.jpg)50% 50% no-repeat;
+    height: 400px;
+    max-width: 1245px;
+    margin: auto;
+}
+
+.slider p {
+    font-family: "Bebas Neue Bold", sans-serif;
+    color: #fff;
+    text-align: right;
+    padding-right: 10%;
+}
+
+.slider p.large {
+    padding-top: 15%;
+}
+
+.slider p:nth-child(even) {
+    padding-right: 15%;
+}
+
+.slider span.large {
+    font-size: 60px;
+    background: #f45400;
+    padding: 0 5px;
+}
+
+.slider span.small {
+    font-size: 30px;
+    background: #f45400;
+    padding: 0 5px;
+}
+
+.tile h1 {
+    margin-bottom: 0;
+}
+
+.tile h2 {
+    margin: 0 0 48px;
+}
+
+.tile .col-sm-3 img {
+    width: 47px;
+    display: block;
+    margin: auto;
+}
+
+.tile span {
+    color: #92ba22;
+    text-align: right;
+}
+
+.tile div > div {
+    display: inline;
+}
+
+.tile-box {
+  position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: 13px;
+    left: -3px;
+}
+
+.text {
+    margin-bottom: 53px;
+}
+
+.text h1 {
+    margin-top: 0;
+}
+
+.col-sm-3 p, .col-sm-4 p {
+    text-align: center;
+}
+
+.border {
+    border-right: 2px solid #92ba22;
+}
+
+#pay {
+    margin: auto;
+    text-align: center;
+}
+
+li.category.active {
+    background: #808080;
+}
+
+li.category.active a span {
+    color: #fff;
+    text-decoration: none;
+}
+
+.large-box {
+    border: 1px solid #d7d7d7;
+    background: url(../img/bg.jpg) no-repeat bottom;
+    display: block;
+}
+
+.large-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-box {
+    background: #d7d7d7;
+    margin: 0;
+    padding: 0;
+}
+
+.category {
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: -1px;
+}
+
+.category a {
+    color: #343434;
+    display: block;
+    padding: 30px;
+}
+
+.category span {
+    border-bottom: 1px dotted #343434;
+}
+
+.category:hover {
+    background: #808080;
+}
+
+.category:hover a span {
+    background: #808080;
+    color: #fff;
+    text-decoration: none;
+}
+
+.category:hover span {
+    border: none;
+}
+
+.category8:hover {}
+
+ul.product-box {
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.product-box {
+    border: 1px solid #f45400;
+    background: #fff;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.product-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+li.product-box {
+    padding: 25px 0;
+}
+
+li.product-box:hover {
+    box-shadow: 0 0 6px 3px rgba(244, 84, 0, 0.4);
+    z-index: 1;
+}
+
+li.product-box:hover a {
+    color: #f45400;
+}
+
+.product {
+  float: left;
+  width: 33.33%;
+
+}
+
+li {
+    color: #92ba22;
+}
+
+li span {
+    color: #343434;
+}
+
+.sub {
+    background: url(../img/sub.jpg) 50% 100% no-repeat;
+}
+
+.sub p {
+    font: 40px "Bebas Neue Bold", sans-serif;
+    text-align: center;
+    padding: 70px;
+    color: #fff;
+    margin: auto;
+}
+
+.sub span {
+    background: #f45400;
+    padding: 0 5px;
+}
+
+.sub form {
+    text-align: center;
+}
+
+input.txt {
+    border: 1px solid #d7d7d7;
+    border-radius: 2px;
+    padding: 5px;
+    width: 260px;
+}
+
+::-webkit-input-placeholder {
+    color: #808080;
+    font: 14px verdana;
+}
+
+.button input {
+    /*font: 14px inherit;*/
+    text-transform: uppercase;
+    text-align: center;
+    width: 140px;
+    height: 33px;
+    color: #fff;
+    background-color: #f45400;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px #de4c00;
+    margin: 11px auto 30px;
+}
+
+footer {
+    background: #343434;
+    padding-bottom: 30px;
+    height: 300px;
+}
+
+footer li {
+    list-style: none;
+    color: #808080;
+    line-height: 2em;
+}
+
+footer li:first-child {
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.copyright {
+    font-size: 18px;
+}
+
+.copyright img {
+    margin: 0 5px 7px 0;
+}
+
+footer span {
+    color: #bebfbd;
+}
+
+footer a {
+    color: #808080;
+}
+
+footer a:hover {
+    color: #bebfbd;
+    text-decoration: underline;
+}
+
+img.footer-img:hover {
+    border: 1px solid #bebfbd;
+    border-radius: 2px;
+    background: #bebfbd;
+}
+
+.footer-col {
+  float: left;
+  width: 20%;
+}
+
+.footer-img {
+  float: left;
+  height: 30px;
+  margin: 0 10px 10px 0;
+  border: 1px solid #343434;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 995px) {
+    .menu img {
+        background: #f45400;
+        border-radius: 2px;
+        height: 31px;
+        margin: 10px 0;
+        padding: 7px;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+      text-align: right;
+    }
+
+    .light-header {
+        margin-bottom: -15px;
+    }
+
+    .menu img {
+        background: #f45400;
+        border-radius: 2px;
+        height: 31px;
+        margin: 10px 0;
+        padding: 7px;
+    }
+
+    .dark-header .mobile .right img {
+        height: 22px;
+        margin: 15px 0;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .light-header {
+        margin-bottom: -25px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .arrow {
+    transform: rotate(90deg);
+}
+
+  .prod li:nth-child(n+2),
+  .serv li:nth-child(n+2) {
+    display: none;
+  }
+
+  .footer-col {
+    width: 33%;
+  }
