@@ -68,7 +68,6 @@ div::after {
 
 .dark-header {
     background: #343434;
-    height: 48px;
 }
 
 .row-large {
@@ -76,8 +75,17 @@ div::after {
   margin: auto;
 }
 
+.dark-header ul {
+  padding: 0;
+}
+
+.nav-menu, .search, .login {
+  display: inline-block;
+  }
+
 .dark-header li {
     display: inline;
+    padding: 5px;
 }
 
 .dark-header a {
@@ -89,15 +97,12 @@ div::after {
     color: #bebfbd;
 }
 
-
-.search input {
-    width: 100%;
-    max-width: 222px;
+.search {
+    margin: 10px;
 }
-
-form.search button {
+.search button {
     width: 26px;
-    height: 26px;
+    height: 24px;
     display: inline-block;
     color: #fff;
     background-color: #f45400;
@@ -111,8 +116,8 @@ button img {
     margin: -2px auto 2px;
 }
 
-.login {
-    text-align: right;
+.right {
+  float: right;
 }
 
 .login img {
@@ -287,6 +292,15 @@ button img {
 #pay {
     margin: auto;
     text-align: center;
+}
+
+.category-box {
+  display: table;
+}
+
+.category {
+  display: table-cell;
+  border-collapse: collapse;
 }
 
 li.category.active {
@@ -512,13 +526,9 @@ img.footer-img:hover {
         padding: 7px;
     }
 
-    .left {
-      float: left;
-    }
-
-    .right {
-      float: right;
-      text-align: right;
+    .dark-header .mobile div {
+      display: inline-block;
+      margin: 0 10px;
     }
 
     .light-header {
@@ -537,11 +547,11 @@ img.footer-img:hover {
         height: 22px;
         margin: 15px 0;
     }
-
+/*
     .right {
         text-align: right;
     }
-
+*/
     .light-header {
         margin-bottom: -25px;
     }
