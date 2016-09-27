@@ -6,308 +6,757 @@
     <title>Title</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <header>
-      <div class="dark-header">
-              <div class="row-large">
-                  <div class="hidden-xs">
-                          <ul class="nav-menu left">
-                              <li><a href="#">Доставка</a></li>
-                              <li><a href="#">Оплата</a></li>
-                              <li><a href="#">Возврат денег</a></li>
-                              <li><a href="#">Акции</a></li>
-                          </ul>
-                      <div class="search right">
-                          <form>
-                              <input class="hidden-sm hidden-xs" type="text" placeholder="Найти товары">
-                              <button type="submit"><img src="img/search.png"></button>
-                          </form>
-                      </div>
-                          <ul class="login right">
-                              <li><a href="#"><img src="img/profile-icon.png">Вход</a></li>
-                              <li><a href="#">Регистрация</a></li>
-                          </ul>
-                  </div>
-              </div>
-              <div class="mobile visible-xs">
-                  <div class="menu left">
-                      <a href="#"><img src="img/menu-icon.png"></a>
-                  </div>
-                  <div class="right">
-                      <a href="#"><img src="img/phone-icon.png"></a>
-                      <a href="#"><img src="img/search-icon.png"></a>
-                      <a href="#"><img src="img/profile-icon.png"></a>
-                  </div>
-              </div>
-          </div>
-          <div class="light-header">
-            <div class="row row-large">
-                <div class="col-xs-4 col-md-3">
-                    <a href="#"><img class="img-responsive" src="img/logo.gif"></a>
-                </div>
-                <div class="col-sm-2 hidden-xs hidden-sm">
-                    <div class="catalog">
-                        <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span><span class="up bold">Каталог</span></a>
+
+<header>
+    <div class="dark-header">
+        <div class="row-large">
+            <div class="left">
+                <div class="menu">
+                    <div class="hidden-xs">
+                        <ul>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Возврат денег</a></li>
+                            <li><a href="#">Акции</a></li>
+                        </ul>
+                    </div>
+                    <div class="visible-xs">
+                        <a href="#"><img src="img/menu-icon.png"></a>
                     </div>
                 </div>
-                <div class="col-sm-4 phone hidden-xs">
-                    <div>+7 (499) <span class="bold">685-02-20</span></div>
-                    <div>Пн - Вс 9:00 - 17:00</div>
+            </div>
+
+            <div class="right">
+                <div class="hidden-xs">
+                    <div class="login">
+                        <ul>
+                            <li><a href="#"><img src="img/profile-icon.png">Вход</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <form>
+                            <input class="hidden-sm hidden-xs" type="text" placeholder="Найти товары">
+                            <button type="submit"><img src="img/search.png"></button>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-xs-8 col-sm-4 col-md-3">
-                  <div class="cart">
-                    <div><span class="glyphicon glyphicon-shopping-cart"></span><span class="up hidden-xs">Корзина</span> (<span class="bold">3</span>)</div>
-                    <div class="hidden-xs">На сумму <span class="bold">28 300</span> Р</div>
-                  </div>
+                <div class="visible-xs">
+                    <a href="#"><img src="img/phone-icon.png"></a>
+                    <a href="#"><img src="img/search-icon.png"></a>
+                    <a href="#"><img src="img/profile-icon.png"></a>
                 </div>
             </div>
-          </div>
-    </header>
 
-
-
-
-
-    <!------------------------------------------------------------------------------------------------------------>
-
-    <div class="slider">
-        <div class="nav left"><span class="glyphicon glyphicon glyphicon-menu-left"></span></div>
-        <div class="nav right"><span class="glyphicon glyphicon glyphicon-menu-right"></span></div>
-        <p class="large"><span class="large">Гарантия качества</span></p>
-        <p><span class="small">20 лет в полиграфии</span></p>
-        <p><span class="small">новое оборудование</span></p>
+        </div>
     </div>
-    <!------------------------------------------------------------------------------------------------------------>
-    <div class="container">
-        <div class="tile">
-            <h1>Ура!</h1>
-            <h2>Вы нашли дешевую типографию!</h2>
-            <div class="row">
-              <div class="col-sm-3 tile-box">
+
+    <div class="light-header">
+        <div class="row row-large">
+            <div class="col-xs-4 col-md-3">
+                <a href="#"><img class="img-responsive" src="img/logo.gif"></a>
+            </div>
+            <div class="col-sm-2 hidden-xs hidden-sm ">
+                <div class="catalog">
+                    <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span><span class="up bold">Каталог</span></a>
+                </div>
+            </div>
+            <div class="col-sm-4 phone hidden-xs">
+                <div>+7 (499) <span class="bold">685-02-20</span></div>
+                <div>Пн - Вс 9:00 - 17:00</div>
+            </div>
+            <div class="col-xs-8 col-sm-4 col-md-3">
+                <div class="cart">
+                    <div><span class="glyphicon glyphicon-shopping-cart"></span><span class="up hidden-xs">Корзина</span> (<span class="bold">3</span>)</div>
+                    <div class="hidden-xs">На сумму <span class="bold">28 300</span> Р</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--MENU---------------------------------------------------------------------------------------------------------->
+<div class="row-large">
+    <div class="menu-catalog">
+        <div class="menu-box">
+            <div class="img">
+                <img src="img/poster.png"/>
+            </div>
+            <ul>
+                <li><a href="#"><span>Листовки</span></a></li>
+                <li><a href="#"><span>Листовки А4</span></a></li>
+                <li><a href="#"><span>Листовки А5</span></a></li>
+                <li><a href="#"><span>Листовки А6</span></a></li>
+                <li><a href="#"><span>Листовки А7</span></a></li>
+                <li><a href="#"><span>Листовки 98х210</span></a></li>
+                <li><a href="#"><span>Бланки</span></a></li>
+                <li><a href="#"><span>Плакаты А1</span></a></li>
+                <li><a href="#"><span>Плакаты А2</span></a></li>
+                <li><a href="#"><span>Плакаты А3</span></a></li>
+                <li><a href="#"><span>Приглашения, флаеры</span></a></li>
+            </ul>
+        </div>
+        <div class="menu-box">
+            <div class="img">
+                <img src="img/magazine.png"/>
+            </div>
+            <ul>
+                <li><a href="#"><span>Брошюры, журналы</span></a></li>
+                <li><a href="#"><span>Брошюры на клей</span></a></li>
+                <li><a href="#"><span>Журналы на скрепку</span></a></li>
+                <li><a href="#"><span>Брошюры навивка пружиной</span></a></li>
+                <li><a href="#"><span>Книги</span></a></li>
+                <li><a href="#"><span>Каталоги</span></a></li>
+            </ul>
+        </div>
+        <div class="menu-box">
+            <div class="img">
+                <img src="img/people.png"/>
+            </div>
+            <ul>
+                <li><a href="#"><span>Визитки</span></a></li>
+                <li><a href="#"><span>Визитки недорого</span></a></li>
+                <li><a href="#"><span>Визитки 100шт 100р</span></a></li>
+                <li><a href="#"><span>Визитки VIP</span></a></li>
+            </ul>
+        </div>
+        <div class="menu-box">
+            <div class="img">
+                <img src="img/triptych-brochure.png"/>
+            </div>
+            <ul>
+                <li><a href="#"><span>буклеты</span></a></li>
+                <li><a href="#"><span>Буклеты А4</span></a></li>
+                <li><a href="#"><span>Журналы на скрепку</span></a></li>
+                <li><a href="#"><span>Брошюры навивка пружиной</span></a></li>
+                <li><a href="#"><span>Каталоги</span></a></li>
+                <li><a href="#"><span>Брошюры на клей</span></a></li>
+            </ul>
+        </div>
+        <div class="menu-box">
+            <div class="img">
+                <img src="img/label.png"/>
+            </div>
+            <ul>
+                <li><a href="#"><span>наклейки</span></a></li>
+                <li><a href="#"><span>Наклейки А4</span></a></li>
+                <li><a href="#"><span>Наклейки А5</span></a></li>
+                <li><a href="#"><span>Наклейки А6</span></a></li>
+            </ul>
+        </div>
+        <div class="clear-both"></div>
+        <div class="menu-box">
+            <div class="img">
+                <img src="img/envelope.png"/>
+            </div>
+            <ul>
+                <li><a href="#"><span>Конверты</span></a></li>
+                <li><a href="#"><span>Конверты E65 110х220</span></a></li>
+                <li><a href="#"><span>Конверты C5 162х229</span></a></li>
+                <li><a href="#"><span>Конверты C6 114х162</span></a></li>
+                <li><a href="#"><span>Конверты C4 229х324</span></a></li>
+            </ul>
+        </div>
+        <div class="menu-box">
+            <div class="img">
+                <img src="img/shopping.png"/>
+            </div>
+            <ul>
+                <li><a href="#"><span>Рекламная полиграфия</span></a></li>
+                <li><a href="#"><span>Приглашения, флаеры</span></a></li>
+                <li><a href="#"><span>Пакеты полиэтиленовые</span></a></li>
+                <li><a href="#"><span>Пакеты бумажные</span></a></li>
+                <li><a href="#"><span>Воблеры</span></a></li>
+                <li><a href="#"><span>Коробки картонные</span></a></li>
+                <li><a href="#"><span>Хангеры на дверь</span></a></li>
+                <li><a href="#"><span>Этикетки</span></a></li>
+            </ul>
+        </div>
+        <div class="menu-box">
+            <div class="img">
+                <img src="img/three.png"/>
+            </div>
+            <ul>
+                <li><a href="#"><span>полиграфия для офиса</span></a></li>
+                <li><a href="#"><span>Блокноты</span></a></li>
+                <li><a href="#"><span>Кубарики для записей</span></a></li>
+                <li><a href="#"><span>Бланки</span></a></li>
+                <li><a href="#"><span>Визитки VIP</span></a></li>
+                <li><a href="#"><span>Самокопирующиеся бланки</span></a></li>
+            </ul>
+        </div>
+        <div class="menu-box">
+            <div class="img">
+                <img src="img/wall.png"/>
+            </div>
+            <ul>
+                <li><a href="#"><span>календари</span></a></li>
+                <li><a href="#"><span>Карманные календари</span></a></li>
+                <li><a href="#"><span>Календари перекидные А3</span></a></li>
+                <li><a href="#"><span>Календари перекидные А2</span></a></li>
+                <li><a href="#"><span>Календари настольные</span></a></li>
+                <li><a href="#"><span>Календари настольные (домик)</span></a></li>
+                <li><a href="#"><span>Квартальные календари</span></a></li>
+                <li><a href="#"><span>Плакаты А1</span></a></li>
+                <li><a href="#"><span>Плакаты А2</span></a></li>
+                <li><a href="#"><span>Плакаты А3</span></a></li>
+            </ul>
+        </div>
+        <div class="clear-both"></div>
+    </div>
+
+</div>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+<div class="slider">
+    <div class="nav left"><span class="glyphicon glyphicon glyphicon-menu-left"></span></div>
+    <div class="nav right"><span class="glyphicon glyphicon glyphicon-menu-right"></span></div>
+    <p class="large"><span class="large">Гарантия качества</span></p>
+    <p><span class="small">20 лет в полиграфии</span></p>
+    <p><span class="small">новое оборудование</span></p>
+</div>
+<!------------------------------------------------------------------------------------------------------------>
+<div class="container">
+    <div class="tile">
+        <h1>Ура!</h1>
+        <h2>Вы нашли дешевую типографию!</h2>
+        <div class="row">
+            <div class="col-sm-3 tile-box">
 
                 <img src="img/tile1.png">
                 <p>Выберите вид продукции и нажмите кнопку «Заказать»</p>
-              </div>
-              <div class=" col-sm-3 tile-box">
+            </div>
+            <div class=" col-sm-3 tile-box">
                 <div class="arrow"><span class="glyphicon glyphicon-menu-right"></span></div>
                 <img src="img/tile2.png">
                 <p>Сделайте макет в онлайн редакторе или загрузите свой</p>
-              </div>
-              <div class="col-sm-3 tile-box">
+            </div>
+            <div class="col-sm-3 tile-box">
                 <div class="arrow"><span class="glyphicon glyphicon-menu-right"></span></div>
                 <img src="img/tile3.png">
                 <p>Оплатите удобным способом как физическое или юридическое лицо</p>
-              </div>
-              <div class="col-sm-3 tile-box">
+            </div>
+            <div class="col-sm-3 tile-box">
                 <div class="arrow"><span class="glyphicon glyphicon-menu-right"></span></div>
                 <img src="img/tile4.png">
                 <p>Заберите готовый тираж из точек выдачи или получите курьером</p>
-              </div>
             </div>
         </div>
-        <div class="clear-both"></div>
-        <!------------------------------------------------------------------------------------------------------------>
-        <div class="products">
-            <h1>Наша продукция</h1>
+    </div>
+    <div class="clear-both"></div>
+
+    <!---------------------------------------------------------------------------------------------------------------->
+    <div class="products">
+        <h1>Наша продукция</h1>
+
+        <div class="row">
             <div class="large-box">
-              <div class="row">
-                  <div class="col-sm-3 category-box">
-                      <ul>
-                          <li class="category"><a href="#"><span>Листовки</span></a></li>
-                          <li class="category"><a href="#"><span>Брошюры, журналы</span></a></li>
-                          <li class="category"><a href="#"><span>Визитки</span></a></li>
-                          <li class="category"><a href="#"><span>Буклеты</span></a></li>
-                          <li class="category"><a href="#"><span>Наклейки</span></a></li>
-                          <li class="category"><a href="#"><span>Конверты</span></a></li>
-                          <li class="category"><a href="#"><span>Рекламная полиграфия</span></a></li>
-                          <li class="category active"><a href="#"><span>Полиграфия для офиса</span></a></li>
-                          <li class="category"><a href="#"><span>Календари</span></a></li>
-                      </ul>
-                  </div>
-                  <ul class="col-sm-9 product-box">
-                      <li class="product-box product">
-                          <a href="#">
-                              <img src="img/notebook.png">
-                              <p>Блокноты</p>
-                          </a>
-                      </li>
-                      <li class="product-box product">
-                          <a href="#">
-                              <img src="img/kubariki-dlya-zapisey.png">
-                              <p>Кубарики для записей</p>
-                          </a>
-                      </li>
-                      <li class="product-box product">
-                          <a href="#">
-                              <img src="img/blanki.png">
-                              <p>Бланки</p>
-                          </a>
-                      </li>
-                      <li class="product-box product">
-                          <a href="#">
-                              <img src="img/samokopir.png">
-                              <p>Самокопирующиеся бланки</p>
-                          </a>
-                      </li>
-                      <li class="product-box product">
-                          <a href="#">
-                              <img src="img/vizitki-vip.png">
-                              <p>Визитки VIP</p>
-                          </a>
-                      </li>
-                  </ul>
-
-              </div>
-            </div>
-
-        </div>
-        <div class="clear-both"></div>
-        <!------------------------------------------------------------------------------------------------------------>
-        <div class="text">
-            <h1>Совершите покупку не выходя из офиса</h1>
-            <div class="row">
-                <div class="col-sm-6 border">
-                    <p>Посетив сайт типографии, выберите продукцию и оформите заказ в онлайн формате, оплатив приемлемым способом:</p>
-                    <div id="pay">
-                        <div class="col-xs-4">
-                            <img src="img/visa.png">
-                            <p>Банковская карта </p>
+                <div class="col-sm-3 hidden-xs category-box">
+                    <div class="category category1" data-product-box="1"><a href="#"><span>Листовки</span></a></div>
+                    <div class="category category2" data-product-box="2"><a href="#"><span>Брошюры, журналы</span></a></div>
+                    <div class="category category3" data-product-box="3"><a href="#"><span>Визитки</span></a></div>
+                    <div class="category category4" data-product-box="4"><a href="#"><span>Буклеты</span></a></div>
+                    <div class="category category5" data-product-box="5"><a href="#"><span>Наклейки</span></a></div>
+                    <div class="category category6" data-product-box="6"><a href="#"><span>Конверты</span></a></div>
+                    <div class="category category7" data-product-box="7"><a href="#"><span>Рекламная полиграфия</span></a></div>
+                    <div class="category category8" data-product-box="8"><a href="#"><span>Полиграфия для офиса</span></a></div>
+                    <div class="category category9" data-product-box="9"><a href="#"><span>Календари</span></a></div>
+                </div>
+                <div class="visible-xs select">
+                    <select>
+                        <option data-product-box="1">Листовки</option>
+                        <option data-product-box="2">Брошюры, журналы</option>
+                        <option data-product-box="3">Визитки</option>
+                        <option data-product-box="4">Буклеты</option>
+                        <option data-product-box="5">Наклейки</option>
+                        <option data-product-box="6">Конверты</option>
+                        <option data-product-box="7">Рекламная полиграфия</option>
+                        <option data-product-box="8">Полиграфия для офиса</option>
+                        <option data-product-box="9">Календари</option>
+                    </select>
+                </div>
+                <div class="col-sm-9 product-box product-box1">
+                    <div class="product">
+                        <a href="#">
+                            <img src="img/samokopir.png">
+                            <p>Листовки А4</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img src="img/samokopir.png">
+                            <p>Листовки А5</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img src="img/samokopir.png">
+                            <p>Листовки А6</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img src="img/samokopir.png">
+                            <p>Листовки А7</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img src="img/samokopir.png">
+                            <p>Листовки 98х210</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img src="img/blanki.png">
+                            <p>Бланки</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img src="img/ad_posters_all.jpg">
+                            <p>Плакаты А3</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img src="img/ad_posters_all.jpg">
+                            <p>Плакаты А2</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img src="img/ad_posters_all.jpg">
+                            <p>Плакаты А1</p>
+                        </a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img src="img/vizitki-vip.png">
+                            <p>Приглашение, флаер</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="remove hide">
+                    <div class="col-sm-9 product-box product-box2">
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/brochures_all.jpg">
+                                <p>Брошюры на клей</p>
+                            </a>
                         </div>
-                        <div class="col-xs-4">
-                            <img src="img/yandex.png">
-                            <p> Яндекс. Деньги </p>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/brochures_all.jpg">
+                                <p>Брошюры на скрепку</p>
+                            </a>
                         </div>
-                        <div class="col-xs-4">
-                            <img src="img/webmoney.png">
-                            <p>Web Money</p>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/brochures_all.jpg">
+                                <p>Брошюры навивка пружиной</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/brochures_all.jpg">
+                                <p>Книги</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/brochures_all.jpg">
+                                <p>Каталоги</p>
+                            </a>
                         </div>
                     </div>
-                    <p>Используя удобную форму заказа, выберите размер тиража, оговорите с работником сроки изготовления. Предлагается комплекс дополнительных услуг, включающих страховку тиража и проверку верстальщиком макета продукции. Предусмотрена доставка
-                        в любой уголок государства по требованию клиента.</p>
+                    <div class="col-sm-9 product-box product-box3">
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/vizitki-vip.png">
+                                <p>Визитки недорого</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/vizitki-vip.png">
+                                <p>Визитки 100шт 100р</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/vizitki-vip.png">
+                                <p>Визитки VIP</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 product-box product-box4">
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/folded-leaflet-letterfold-portrait.jpg">
+                                <p>Буклеты А4</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/brochures_all.jpg">
+                                <p>Журналы на скрепку</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/brochures_all.jpg">
+                                <p>Брошюры навивка пружиной</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/brochures_all.jpg">
+                                <p>Каталоги</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/brochures_all.jpg">
+                                <p>Брошюры на клей</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 product-box product-box5">
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/stickers-rectangular-a.jpg">
+                                <p>Наклейки А4</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/stickers-rectangular-a.jpg">
+                                <p>Наклейки А5</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/stickers-rectangular-a.jpg">
+                                <p>Наклейки А6</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 product-box product-box6">
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/vizitki-vip.png">
+                                <p>Конверты E65 110х220 мм</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/vizitki-vip.png">
+                                <p>Конверты C5 162х229 мм</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/vizitki-vip.png">
+                                <p>Конверты C6 114х162 мм</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/vizitki-vip.png">
+                                <p>Конверты C4 229х324 мм</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 product-box product-box7">
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/vizitki-vip.png">
+                                <p>Приглашение, флаер</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/notebook.png">
+                                <p>Пакеты полиэтиленовые</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/notebook.png">
+                                <p>Пакеты бумажные</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/kubariki-dlya-zapisey.png">
+                                <p>Воблеры</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/blanki.png">
+                                <p>Коробки картонные</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/samokopir.png">
+                                <p>Хангеры на дверь</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/vizitki-vip.png">
+                                <p>Этикетки</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 product-box product-box8">
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/notebook.png">
+                                <p>Блокноты</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/kubariki-dlya-zapisey.png">
+                                <p>Кубарики для записей</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/blanki.png">
+                                <p>Бланки</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/samokopir.png">
+                                <p>Самокопирующиеся бланки</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/vizitki-vip.png">
+                                <p>Визитки VIP</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 product-box product-box9">
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/pocket-calendars-printing.jpg">
+                                <p>Карманные календари</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/wall_calendar_1.jpg">
+                                <p>Календари перекидные А3</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/wall_calendar_1.jpg">
+                                <p>Календари перекидные А2</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/desk-calendars-printing.jpg">
+                                <p>Календари настольные</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/desk-calendars-printing.jpg">
+                                <p>Календари настольные домик</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/multi_month_calendar.jpg">
+                                <p>Квартальные календари</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/ad_posters_all.jpg">
+                                <p>Плакаты А3</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/ad_posters_all.jpg">
+                                <p>Плакаты А2</p>
+                            </a>
+                        </div>
+                        <div class="product">
+                            <a href="#">
+                                <img src="img/ad_posters_all.jpg">
+                                <p>Плакаты А1</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clear-both"></div>
                 </div>
-                <div class="col-sm-6">
-                    <p>Представители организации готовы ответить на интересующие вопросы после формирования посетителем запроса, посредством заполнения унифицированной анкеты.
-                        <p>Надёжная и недорогая типография работает в режиме нон-стоп без выходных, используя современное оборудование, позволяющее создавать эффектную рекламную продукцию, привлекающую внимание потенциальных клиентов.
-                            <p>Работа ведётся на основании договора-оферты, содержащего детальную информацию о товаре, порядок его приобретения и способы расчёта.
-                </div>
-            </div>
-        </div>
-        <div class="clear-both"></div>
-        <!------------------------------------------------------------------------------------------------------------>
-        <div class="text">
-            <h1>Технологии</h1>
-            <div class="row">
-                <div class="col-sm-6 border">
-                    <p>Печать производится популярными способами, способствующими получению качественной продукции:
-                        <ul>
-                            <li><span>Цифровая;</span></li>
-                            <li><span>Офсетная;</span></li>
-                            <li><span>Сублимация;</span></li>
-                            <li><span>Флексография.</span></li>
-                        </ul>
-                        <p>Стандартные и VIP визитки изготавливаются методом полноцветной односторонней и двусторонней печати. Изображение наносится на мелованную плотную бумагу, устойчивую к износу. Изображение не выцветает, а нанесённый текст характеризуется
-                            чётким отображением. Макет пользователь создаёт лично с задействованием редактора, предоставленного на веб-сайте. Метод и материалы подбираются в зависимости от типа продукции.
-                </div>
-                <div class="col-sm-6">
-                    <p>Бланки создаются в полноцветном формате с применением 4-х красок, но допустимы и смесевые варианты исполнения с задействованием шкалы Pantone.</p>
-                    <p>Если требуется хорошая полиграфия официальный сайт компании, поможет оперативно выбрать и заказать печатную продукцию, созданную по современным технологиям. Каталоги с брошюрами создаются с помощью надёжного PUR-клея, крепко удерживающего
-                        страницы и гарантирующего оптимальную раскрываемость блока.</p>
-                    <p>Наклейки делают из самоклеящейся бумаги, характеризующейся идеальной клейкостью, обеспечивающей прочное сцепление со всеми типами поверхности.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="clear-both"></div>
-        <!------------------------------------------------------------------------------------------------------------>
-        <div class="text">
-            <h1>Оптимальное ценообразование</h1>
-            <div class="row">
-                <div class="col-sm-6 border">
-                    <p>Организация устанавливает цены на полиграфию, в зависимости от нескольких факторов:
-                        <ul>
-                            <li><span>Размер тиража;</span></li>
-                            <li><span>Сроки изготовления;</span></li>
-                            <li><span>Качество технического носителя информации;</span></li>
-                            <li><span>Метод печати.</span></li>
-                        </ul>
-                        <p>Посетителям веб-сайта предлагается зарегистрировать персональный кабинет. Авторизация позволит полноценно использовать функционал проекта и самостоятельно отслеживать статус заказа.
-                </div>
-                <div class="col-sm-6">
-                    <p>Готовая продукция доставляется по Москве и 250 городам страны почтой России или с курьером. Возможен вывоз со склада организации по предварительной договорённости с менеджером.</p>
-                    <p>Прямо сейчас закажите обратный звонок, и консультант фирмы свяжется с вами. Специалист предоставит бесплатную консультацию и поможет в оформлении заказа, пояснив правила использования функционала.</p>
-                </div>
+                <div class="clear-both"></div>
             </div>
         </div>
     </div>
     <div class="clear-both"></div>
     <!------------------------------------------------------------------------------------------------------------>
-    <div class="sub">
-        <p><span>Хочешь быть в курсе всех новостей, акций и скидок?</span></p>
-        <form>
-            <div class="email">
-                <input type="email" name="email" id="email" class="txt" placeholder="Ваш e-mail" required>
+    <div class="text">
+        <h1>Совершите покупку не выходя из офиса</h1>
+        <div class="row">
+            <div class="col-sm-6 border">
+                <p>Посетив сайт типографии, выберите продукцию и оформите заказ в онлайн формате, оплатив приемлемым способом:</p>
+                <div id="pay">
+                    <div class="col-xs-4">
+                        <img src="img/visa.png">
+                        <p>Банковская карта </p>
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="img/yandex.png">
+                        <p> Яндекс. Деньги </p>
+                    </div>
+                    <div class="col-xs-4">
+                        <img src="img/webmoney.png">
+                        <p>Web Money</p>
+                    </div>
+                </div>
+                <p>Используя удобную форму заказа, выберите размер тиража, оговорите с работником сроки изготовления. Предлагается комплекс дополнительных услуг, включающих страховку тиража и проверку верстальщиком макета продукции. Предусмотрена доставка
+                    в любой уголок государства по требованию клиента.</p>
             </div>
-            <div class="button">
-                <input type="submit" id="submitbtn" name="submitbtn" value="Подписаться">
+            <div class="col-sm-6">
+                <p>Представители организации готовы ответить на интересующие вопросы после формирования посетителем запроса, посредством заполнения унифицированной анкеты.
+                <p>Надёжная и недорогая типография работает в режиме нон-стоп без выходных, используя современное оборудование, позволяющее создавать эффектную рекламную продукцию, привлекающую внимание потенциальных клиентов.
+                <p>Работа ведётся на основании договора-оферты, содержащего детальную информацию о товаре, порядок его приобретения и способы расчёта.
             </div>
-        </form>
+        </div>
     </div>
     <div class="clear-both"></div>
     <!------------------------------------------------------------------------------------------------------------>
-    <footer>
-      <div class="row-large">
-            <div class="footer-col">
+    <div class="text">
+        <h1>Технологии</h1>
+        <div class="row">
+            <div class="col-sm-6 border">
+                <p>Печать производится популярными способами, способствующими получению качественной продукции:
                 <ul>
-                    <li class="copyright">© 2016 <br>
-                        <a href="#"><img src="img/robot-small.png"><span>Print</span>Robot</a>
-                    </li>
-                    <li>Все права защищены</li>
-                    <li>Все цены указаны в рублях с учетом НДС</li>
+                    <li><span>Цифровая;</span></li>
+                    <li><span>Офсетная;</span></li>
+                    <li><span>Сублимация;</span></li>
+                    <li><span>Флексография.</span></li>
                 </ul>
+                <p>Стандартные и VIP визитки изготавливаются методом полноцветной односторонней и двусторонней печати. Изображение наносится на мелованную плотную бумагу, устойчивую к износу. Изображение не выцветает, а нанесённый текст характеризуется
+                    чётким отображением. Макет пользователь создаёт лично с задействованием редактора, предоставленного на веб-сайте. Метод и материалы подбираются в зависимости от типа продукции.
             </div>
-            <div class="footer-col prod">
+            <div class="col-sm-6">
+                <p>Бланки создаются в полноцветном формате с применением 4-х красок, но допустимы и смесевые варианты исполнения с задействованием шкалы Pantone.</p>
+                <p>Если требуется хорошая полиграфия официальный сайт компании, поможет оперативно выбрать и заказать печатную продукцию, созданную по современным технологиям. Каталоги с брошюрами создаются с помощью надёжного PUR-клея, крепко удерживающего
+                    страницы и гарантирующего оптимальную раскрываемость блока.</p>
+                <p>Наклейки делают из самоклеящейся бумаги, характеризующейся идеальной клейкостью, обеспечивающей прочное сцепление со всеми типами поверхности.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="clear-both"></div>
+    <!------------------------------------------------------------------------------------------------------------>
+    <div class="text">
+        <h1>Оптимальное ценообразование</h1>
+        <div class="row">
+            <div class="col-sm-6 border">
+                <p>Организация устанавливает цены на полиграфию, в зависимости от нескольких факторов:
                 <ul>
-                    <li>Продукция</li>
-                    <li><a href="#">Визитки</a></li>
-                    <li><a href="#">Листовки А4</a></li>
-                    <li><a href="#">Буклеты А4</a></li>
-                    <li><a href="#">Листовки А5</a></li>
-                    <li><a href="#">Листовки А6</a></li>
+                    <li><span>Размер тиража;</span></li>
+                    <li><span>Сроки изготовления;</span></li>
+                    <li><span>Качество технического носителя информации;</span></li>
+                    <li><span>Метод печати.</span></li>
                 </ul>
+                <p>Посетителям веб-сайта предлагается зарегистрировать персональный кабинет. Авторизация позволит полноценно использовать функционал проекта и самостоятельно отслеживать статус заказа.
             </div>
-            <div class="footer-col serv">
-                <ul>
-                    <li>Сервис</li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">Запрос в типографию</a></li>
-                    <li><a href="#">Договор оферты</a></li>
-                    <li><a href="#">Сделать макет</a></li>
-                </ul>
+            <div class="col-sm-6">
+                <p>Готовая продукция доставляется по Москве и 250 городам страны почтой России или с курьером. Возможен вывоз со склада организации по предварительной договорённости с менеджером.</p>
+                <p>Прямо сейчас закажите обратный звонок, и консультант фирмы свяжется с вами. Специалист предоставит бесплатную консультацию и поможет в оформлении заказа, пояснив правила использования функционала.</p>
             </div>
-            <div class="footer-col">
-                <ul>
-                    <li>Социальные сети</li>
-                    <li><a href="#"><img class="footer-img" src="img/facebook-logo.png"></a></li>
-                    <li><a href="#"><img class="footer-img" src="img/vk-logo.png"></a></li>
-                    <div class="clear-both"></div>
-                    <li><a href="#"><img class="footer-img" src="img/google-logo.png"></a></li>
-                    <li><a href="#"><img class="footer-img" src="img/odnoklassniki-logo.png"></a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <ul>
-                    <li>Способы оплаты</li>
-                    <li><a href="#"><img class="footer-img" src="img/visa-logo.png"></a></li>
-                    <li><a href="#"><img class="footer-img" src="img/mastercard-logo.png"></a></li>
-                    <div class="clear-both"></div>
-                    <li><a href="#"><img class="footer-img" src="img/webmoney-logo.png"></a></li>
-                    <li><a href="#"><img class="footer-img" src="img/yandex-logo.png"></a></li>
-                </ul>
-            </div>
-          </div>
-        </footer>
+        </div>
+    </div>
+</div>
+<div class="clear-both"></div>
+<!------------------------------------------------------------------------------------------------------------>
+<div class="sub">
+    <p><span>Хочешь быть в курсе всех новостей, акций и скидок?</span></p>
+    <form>
+        <div class="email">
+            <input type="email" name="email" id="email" class="txt" placeholder="Ваш e-mail" required>
+        </div>
+        <div class="button">
+            <input type="submit" id="submitbtn" name="submitbtn" value="Подписаться">
+        </div>
+    </form>
+</div>
+<div class="clear-both"></div>
+<!------------------------------------------------------------------------------------------------------------>
+<footer>
+    <div class="row-large">
+        <div class="footer-col">
+            <ul>
+                <li class="copyright">© 2016 <br>
+                    <a href="#"><img src="img/robot-small.png"><span>Print</span>Robot</a>
+                </li>
+                <li>Все права защищены</li>
+                <li>Все цены указаны в рублях с учетом НДС</li>
+            </ul>
+        </div>
+        <div class="footer-col prod">
+            <ul>
+                <li>Продукция</li>
+                <li><a href="#">Визитки</a></li>
+                <li><a href="#">Листовки А4</a></li>
+                <li><a href="#">Буклеты А4</a></li>
+                <li><a href="#">Листовки А5</a></li>
+                <li><a href="#">Листовки А6</a></li>
+            </ul>
+        </div>
+        <div class="footer-col serv">
+            <ul>
+                <li>Сервис</li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Запрос в типографию</a></li>
+                <li><a href="#">Договор оферты</a></li>
+                <li><a href="#">Сделать макет</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <ul>
+                <li>Социальные сети</li>
+                <li><a href="#"><img class="footer-img" src="img/facebook-logo.png"></a></li>
+                <li><a href="#"><img class="footer-img" src="img/vk-logo.png"></a></li>
+                <div class="clear-both"></div>
+                <li><a href="#"><img class="footer-img" src="img/google-logo.png"></a></li>
+                <li><a href="#"><img class="footer-img" src="img/odnoklassniki-logo.png"></a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <ul>
+                <li>Способы оплаты</li>
+                <li><a href="#"><img class="footer-img" src="img/visa-logo.png"></a></li>
+                <li><a href="#"><img class="footer-img" src="img/mastercard-logo.png"></a></li>
+                <div class="clear-both"></div>
+                <li><a href="#"><img class="footer-img" src="img/webmoney-logo.png"></a></li>
+                <li><a href="#"><img class="footer-img" src="img/yandex-logo.png"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
 </body>
 
 </html>
