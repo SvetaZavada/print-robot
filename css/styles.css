@@ -75,15 +75,11 @@ div::after {
     margin: auto;
 }
 
-.row-large > div {
-    display: inline;
-}
-
 .dark-header ul {
     padding: 0;
 }
 
-.menu, .search, .login {
+.nav-menu, .search, .login {
     display: inline-block;
 }
 
@@ -104,7 +100,6 @@ div::after {
 .search {
     margin: 10px;
 }
-
 .search button {
     width: 26px;
     height: 24px;
@@ -308,7 +303,7 @@ button img {
     text-align: right;
 }
 
-.tile-box {
+.tile div > div {
     display: inline;
 }
 
@@ -316,7 +311,7 @@ button img {
     position: relative;
 }
 
-.arrow span {
+.arrow {
     position: absolute;
     top: 13px;
     left: -3px;
@@ -606,7 +601,7 @@ img.footer-img:hover {
         padding: 7px;
     }
 
-    .dark-header .right img {
+    .dark-header .mobile .right img {
         height: 22px;
         margin: 15px 0;
     }
@@ -619,11 +614,8 @@ img.footer-img:hover {
 }
 
 @media screen and (max-width: 767px) {
-    .arrow span {
+    .arrow {
         transform: rotate(90deg);
-        display: block;
-        margin: auto;
-        top: 0; left: 0; bottom: 0; right: 0;
     }
 
     .prod li:nth-child(n+2),
