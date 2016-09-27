@@ -220,6 +220,43 @@ button img {
     color: #92ba22;
 }
 
+/*
+ * Мобильное меню
+ */
+
+.mobile-menu {
+    position: absolute;
+    top: 51px;
+    z-index: 5;
+    background: #f9f9f9;
+    border-radius: 2px;
+}
+
+.mobile-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-menu > ul > li {
+    border-bottom: 1px solid #d7d7d7;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.mobile-menu li {
+    padding: 10px;
+}
+
+.has-sub .has-sub > ul > li span {
+    color: #808080;
+    text-transform: none;
+}
+
+/*
+ * Слайдер
+ */
+
 .nav {
     background: #92ba22;
     width: 40px;
