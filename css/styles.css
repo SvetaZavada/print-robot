@@ -227,6 +227,7 @@ button img {
 .mobile-menu {
     position: absolute;
     top: 51px;
+    width: 300px;
     z-index: 5;
     background: #f9f9f9;
     border-radius: 2px;
@@ -236,25 +237,74 @@ button img {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.mobile-menu > ul > li {
-    border-bottom: 1px solid #d7d7d7;
-    padding: 20px;
     text-transform: uppercase;
 }
 
 .mobile-menu li {
-    padding: 10px;
+    padding: 10px 20px;
 }
 
-.has-sub .has-sub > ul > li span {
-    color: #808080;
+.mobile-menu .glyphicon {
+    float: right;
+    padding-left: 10px;
+}
+
+.mobile-menu img {
+    width: 13px;
+    margin: -3px 5px 0 0;
+}
+
+.has-sub .has-sub {
     text-transform: none;
+    border-bottom: 1px solid #d7d7d7;
 }
 
 
 
+.has-sub.first.open > a > div > span{
+    color: #f45400;
+}
+
+.has-sub.first.open > a > .glyphicon {
+    transform: rotate(180deg);
+    transition: all 0.4s ease;
+}
+
+.has-sub.open > a > div > .glyphicon {
+    transform: rotate(180deg);
+    transition: all 0.4s ease;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu li {
+    padding: 10px;
+    text-transform: none;
+
+}
+
+.submenu span {
+    color: #808080;
+}
+
+.mobile-menu .copyright {
+    background: #343434;
+    color: #808080;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.mobile-menu .copyright a {
+    color: #808080;
+    font-family: "Segoe UI Bold", Arial, sans-serif;
+    font-size: 18px;
+}
+
+.mobile-menu .copyright span {
+    color: #bebfbd;
+}
 /*
  * Слайдер
  */
