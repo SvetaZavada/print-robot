@@ -35,8 +35,23 @@ $(document).ready(function() {
 		return false;
 	});
 
+// mobile menu
 
-
+	$('.menu-sub').click(function() {
+		$('.has-sub.first').toggleClass("open");
+		$('.has-sub .has-sub').slideToggle("slow");
+	});
+/*
+	$('.has-sub.submenu').click(function() {
+		$(this).toggleClass("open");
+		$('.submenu').slideToggle("slow");
+	});
+*/
+	$('.has-sub.submenu').click(function() {
+		$(this).toggleClass("open");
+		var sub_menu = $(this).data('submenu');
+		$('.submenu' + sub_menu).slideToggle("slow");
+	});
 
 	$(".catalog").click(function() {
 		$(this).toggleClass("open");
@@ -44,4 +59,6 @@ $(document).ready(function() {
 	});
 
 });
+
+
 
