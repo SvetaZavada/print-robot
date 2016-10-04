@@ -37,26 +37,61 @@ $(document).ready(function() {
 
 // mobile menu
 
+	$('div.menu').click(function() {
+		$('#accordion').slideToggle("slow");
+	});
+
 	$('.menu-sub').click(function() {
 		$('.has-sub.first').toggleClass("open");
 		$('.has-sub .has-sub').slideToggle("slow");
 	});
-/*
+	/*
+	 $('.has-sub.submenu').click(function() {
+	 $(this).toggleClass("open");
+	 $('.submenu').slideToggle("slow");
+	 });
+	 */
 	$('.has-sub.submenu').click(function() {
 		$(this).toggleClass("open");
-		$('.submenu').slideToggle("slow");
+		$(this).find('ul.submenu').slideToggle();
+		/*$('ul.submenu').slideToggle("slow");*/
+		/*$('ul.submenu').hide();
+		 /*var sub_menu = $('ul.submenu').data('submenu');*/
+		/*$('ul.submenu'/* + sub_menu).show();*/
 	});
-*/
-	$('.has-sub.submenu').click(function() {
-		$(this).toggleClass("open");
-		var sub_menu = $(this).data('submenu');
-		$('.submenu' + sub_menu).slideToggle("slow");
-	});
+
+// catalog
 
 	$(".catalog").click(function() {
 		$(this).toggleClass("open");
 		$(".menu-catalog").slideToggle("slow");
 	});
+
+
+
+// menu button
+
+	(function() {
+
+		"use strict";
+
+		var toggles = document.querySelectorAll(".cmn-toggle-switch");
+
+		for (var i = toggles.length - 1; i >= 0; i--) {
+			var toggle = toggles[i];
+			toggleHandler(toggle);
+		};
+
+		function toggleHandler(toggle) {
+			toggle.addEventListener( "click", function(e) {
+				e.preventDefault();
+				(this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
+			});
+		}
+
+	})();
+
+
 
 });
 
