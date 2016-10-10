@@ -71,7 +71,7 @@ $(document).ready(function() {
 
 // menu button
 
-	(function() {
+	/*(function() {
 
 		"use strict";
 
@@ -82,14 +82,19 @@ $(document).ready(function() {
 			toggleHandler(toggle);
 		};
 
-		function toggleHandler(toggle) {
+		/*function toggleHandler(toggle) {
 			toggle.addEventListener( "click", function(e) {
 				e.preventDefault();
 				(this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
 			});
-		}
+		}*/
 
-	})();
+        $(".cmn-toggle-switch").click(function() {
+            $(this).toggleClass("active");
+            $(".dark-bg").toggleClass("active");
+        });
+
+
 
 
 

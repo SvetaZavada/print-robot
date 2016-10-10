@@ -269,9 +269,8 @@ button img {
     bottom: -6px;
 }
 
-/**
- * переключение
- */
+
+/* переключение hamburger button */
 .cmn-toggle-switch__htx {
     background-color: #f45400;
 }
@@ -402,6 +401,17 @@ button img {
 .mobile-menu .copyright span {
     color: #bebfbd;
 }
+
+.dark-bg.active {
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+}
+
+
 /*
  * Слайдер
  */
