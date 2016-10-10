@@ -91,6 +91,7 @@ $(document).ready(function() {
 
         $(".cmn-toggle-switch").click(function() {
             $(this).toggleClass("active");
+            $(".dark-bg").toggleClass("active");
         });
 
 
