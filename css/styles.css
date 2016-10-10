@@ -269,9 +269,8 @@ button img {
     bottom: -6px;
 }
 
-/**
- * переключение
- */
+
+/* переключение hamburger button */
 .cmn-toggle-switch__htx {
     background-color: #f45400;
 }
